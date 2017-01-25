@@ -1,0 +1,22 @@
+#informations{
+	
+}
+
+#bouton-envoyer-video{
+	background-color: orange;
+	margin-top: 10%;
+	color: white;
+}
+
+#selectionner-video{
+	color: orange;
+}
+
+label{
+	color: orange;
+	text-decoration: underline;
+}
+
+#textarea-desc-video{
+	min-height: 200px;
+}

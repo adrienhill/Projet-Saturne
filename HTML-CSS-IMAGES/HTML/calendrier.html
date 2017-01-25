@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Saturne</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../css/calendrier.css"/>
+		<link rel="stylesheet" href="../jquery/jquery.mobile-1.4.5.min.css"/> <!-- enlever la couleur du fond d'écran-->
+		<link rel="stylesheet"  type="text/css" href="../css/ecran-evenements.css"/>
+   		<script type="text/javascript" src="../JS/calendrier.js"></script>
+   		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="../jquery/jquery.mobile-1.4.5.min.js"></script> 
+		
+	</head>
+
+	<body>
+			<div data-role="page">
+
+				<div data-role="header">
+					<h1>Calendrier</h1>
+				</div><!-- /header -->
+
+
+				<div role="main" class="ui-content">
+					<script type="text/javascript">
+				    calendrier();
+				    </script>
+
+				    <h2>Événements à venir</h2>
+				    <ul data-role="listview" data-inset="true">
+				     	<li>
+				     		<img src="../img/image-soiree.jpg">
+				     		<h2>18/04/2017</h2>
+				     		<p>Soirée BPM</p>
+				     	</li>
+						<li>
+				     		<img src="../img/image-soiree.jpg">
+				     		<h2>18/04/2017</h2>
+				     		<p>Soirée BPM</p>
+				     	</li>
+					</ul>
+				</div>
+			</div>
+	</body>
+</html>

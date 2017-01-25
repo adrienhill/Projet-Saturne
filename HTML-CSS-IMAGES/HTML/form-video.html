@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Saturne</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../jquery/jquery.mobile-1.4.5.min.css"/> <!-- enlever la couleur du fond d'écran-->
+   		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="../jquery/jquery.mobile-1.4.5.min.js"></script> 
+		
+	</head>
+
+	<body>
+			<div data-role="page">
+
+				<div data-role="header">
+					<h1>Envoyer Une Vidéo</h1>
+				</div><!-- /header -->
+				<div role="main" class="ui-content">
+				    <h2>Informations Sur La Vidéo</h2>
+				    <form>
+				    	<label for="select-choice-mini" class="select">Choisir un événement : </label>
+				    	<select name="select-choice-event" id="select-choice-event" data-mini="true" data-inline="true">
+				    		<optgroup label="Choisir l'événement">
+				    		<option value="evenement1">Soiré BPM</option>
+				    		<option value="evenement2">Remise des diplômes</option>
+				    		<option value="evenement3">Troph'HEI</option>
+				    		<option value="evenement4">Raid HEI</option>
+				    	</select>
+				    	<label for="text-basic">Nom de la vidéo: </label>
+				    	<input type="text" name="text-nom-video" id="text-nom-video" value="">
+				    	<label for="textarea">Description de la vidéo:</label>
+				    	<textarea cols="80" rows="8" name="textarea-desc-video" id="textarea-desc-video"></textarea>
+				    	<label for="file">Séléctionner la vidéo à envoyer:</label>
+				    	<input type="file" name="file-vid" id="file-vid" value="">
+				    	<button class="ui-shadow ui-btn ui-corner-all">Envoyer la vidéo mamènnnnne</button>
+
+				    </form>
+				</div>
+			</div>
+	</body>
+</html>
