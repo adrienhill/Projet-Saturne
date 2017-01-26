@@ -1,3 +1,9 @@
-.thumbnail .caption, .thumbnail h3{
+.thumbnail .caption, .thumbnail h3,.featurette-heading{
 	text-align: center;
 }
+
+#carousel{
+	margin-bottom: 20px;
+}
+
+
