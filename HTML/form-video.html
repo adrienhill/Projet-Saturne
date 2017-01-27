@@ -1,24 +1,22 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-		<!-- ajout adri-->
-		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<link href="../css/bootstrap.min.css" rel="stylesheet">
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    	<link rel="stylesheet" href="../css/style.css">
-    	<!-- ajout adri-->
-		<title>Association Saturne</title>
+		<title>Saturne</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="../jquery/jquery.mobile-1.4.5.min.css"/> <!-- enlever la couleur du fond d'écran-->
    		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="../jquery/jquery.mobile-1.4.5.min.js"></script> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/form-video.css"/>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 		
 	</head>
 
 	<body>
-
-		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="navbar navbar-default navbar-static-top" role="navigation">
 			<div class="container">
         <div class="navbar-header">
 
@@ -49,18 +47,23 @@
             	</li>            
         	</ul>
         </div>
+
+    	</div>
+    	</div>
+
+
 			<div data-role="page">
 
 				<div data-role="header">
-					<h1>Envoyer Une Vidéo</h1>
+					<h1>Calendrier</h1>
 				</div><!-- /header -->
-				<div role="main" class="ui-content">
-				    <h2>Informations Sur La Vidéo</h2>
+					<div role="main" class="ui-content">
+				    <h2 id="informations">Informations Sur La Vidéo</h2>
 				    <form>
 				    	<label for="select-choice-mini" class="select">Choisir un événement : </label>
 				    	<select name="select-choice-event" id="select-choice-event" data-mini="true" data-inline="true">
 				    		<optgroup label="Choisir l'événement">
-				    		<option value="evenement1">Soiré BPM</option>
+				    		<option value="evenement1">Soirée BPM</option>
 				    		<option value="evenement2">Remise des diplômes</option>
 				    		<option value="evenement3">Troph'HEI</option>
 				    		<option value="evenement4">Raid HEI</option>
@@ -70,14 +73,12 @@
 				    	<label for="textarea">Description de la vidéo:</label>
 				    	<textarea cols="80" rows="8" name="textarea-desc-video" id="textarea-desc-video"></textarea>
 				    	<label for="file">Séléctionner la vidéo à envoyer:</label>
-				    	<input type="file" name="file-vid" id="file-vid" value="">
-				    	<button class="ui-shadow ui-btn ui-corner-all">Envoyer la vidéo mamènnnnne</button>
-
+				    	<input type="file" name="file-vid" id="file-vid" value="" id="selectionner-video">
+				    	<a href="consultervideo.html" class="ui-shadow ui-btn ui-corner-all" id="bouton-envoyer-video">Envoyer la vidéo mamènnnnne</a>
 				    </form>
 				</div>
 			</div>
-
-	<!-- ajout adri-->
+		<!-- ajout adri-->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
